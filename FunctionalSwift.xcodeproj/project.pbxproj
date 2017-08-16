@@ -10,6 +10,7 @@
 		28270F081B7D3AE7004A75B7 /* FunctionalSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 28270F071B7D3AE7004A75B7 /* FunctionalSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28270F0E1B7D3AE8004A75B7 /* FunctionalSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28270F021B7D3AE7004A75B7 /* FunctionalSwift.framework */; };
 		28270F151B7D3AE8004A75B7 /* FunctionalSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28270F141B7D3AE8004A75B7 /* FunctionalSwiftTests.swift */; };
+		28270F1F1B7D3B25004A75B7 /* FunctionalArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28270F1E1B7D3B25004A75B7 /* FunctionalArrays.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		28270F0D1B7D3AE8004A75B7 /* FunctionalSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunctionalSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28270F131B7D3AE8004A75B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28270F141B7D3AE8004A75B7 /* FunctionalSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalSwiftTests.swift; sourceTree = "<group>"; };
+		28270F1E1B7D3B25004A75B7 /* FunctionalArrays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalArrays.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				28270F071B7D3AE7004A75B7 /* FunctionalSwift.h */,
+				28270F1E1B7D3B25004A75B7 /* FunctionalArrays.swift */,
 				28270F051B7D3AE7004A75B7 /* Supporting Files */,
 			);
 			path = FunctionalSwift;
@@ -163,9 +166,11 @@
 				TargetAttributes = {
 					28270F011B7D3AE7004A75B7 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0830;
 					};
 					28270F0C1B7D3AE8004A75B7 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -209,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28270F1F1B7D3B25004A75B7 /* FunctionalArrays.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +329,7 @@
 		28270F191B7D3AE8004A75B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -332,12 +339,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		28270F1A1B7D3AE8004A75B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -347,6 +357,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -364,6 +375,7 @@
 				INFOPLIST_FILE = FunctionalSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -377,6 +389,7 @@
 				INFOPLIST_FILE = FunctionalSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -399,6 +412,7 @@
 				28270F1A1B7D3AE8004A75B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28270F1B1B7D3AE8004A75B7 /* Build configuration list for PBXNativeTarget "FunctionalSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +421,7 @@
 				28270F1D1B7D3AE8004A75B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
